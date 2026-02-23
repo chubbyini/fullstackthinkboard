@@ -7,7 +7,8 @@ import CreatePage from "./pages/CreatePage";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-[#1eb854]/20 via-[#171212]/5 to-[#1eb854]/10">
+      <Toaster />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/note/:id" element={<NoteDetailPage />} />

@@ -13,7 +13,7 @@ if (
   try {
     ratelimit = new Ratelimit({
       redis: Redis.fromEnv(),
-      limiter: Ratelimit.slidingWindow(10, "20 s"), // 10 requests per 20 seconds
+      limiter: Ratelimit.slidingWindow(30, "20 s"), // 30 requests per 20 seconds
       analytics: true,
     });
     console.log("✅ Rate limiter initialized with Upstash");
